@@ -489,7 +489,8 @@ body {
 .contact {
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  width: 100%;
+  height: 110vh;
 }
 
 .contact_title {
@@ -592,7 +593,7 @@ body {
 .footer_bg {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 0px;
   z-index: 100;
   pointer-events: none;
 }
