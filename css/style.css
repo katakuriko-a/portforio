@@ -150,7 +150,7 @@ body {
   position: fixed;
   height: 30px;
   z-index: 2000;
-  right: 68px;
+  right: 58px;
   top: 120px;
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -349,7 +349,7 @@ body {
 .arrow {
   position: absolute;
   width: 64px;
-  bottom: 80px;
+  bottom: 15%;
   left: 24px;
   -webkit-animation-name: arrow;
           animation-name: arrow;
@@ -370,15 +370,14 @@ body {
 .about {
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .about_title {
   display: block;
   width: 84%;
   top: 64px;
-  left: 50%;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  left: 8%;
   position: absolute;
   z-index: 400;
 }
@@ -387,15 +386,18 @@ body {
   display: block;
   width: 84%;
   top: 200px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  left: 8.5%;
   position: absolute;
   z-index: 400;
   opacity: 1;
   cursor: pointer;
   -webkit-transition: .3s;
   transition: .3s;
+}
+
+.about_menu:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .about_menu.hidden {
@@ -456,6 +458,8 @@ body {
 
 .works {
   width: 100%;
+  height: 60vh;
+  overflow: hidden;
   position: relative;
 }
 
@@ -467,13 +471,14 @@ body {
 }
 
 .works_items {
+  width: 180%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 64px 24px;
+  margin: 64px -40% 0;
 }
 
 .works_item {
@@ -484,6 +489,11 @@ body {
   border-radius: 16px;
   -webkit-box-shadow: 2px 2px 0;
           box-shadow: 2px 2px 0;
+}
+
+.works_item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .contact {
