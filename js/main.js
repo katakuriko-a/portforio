@@ -3,7 +3,7 @@
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.querySelector(".loading").classList.add("hidden");
-    }, 0);
+    }, 2000);
   });
 
   const spans = document.querySelectorAll("#span");
@@ -66,12 +66,47 @@ const short = document.querySelector(".about_short");
 const me = document.querySelector(".about_me");
 
 short.addEventListener("click", () => {
-  long.classList.add('show');
-  short.classList.add('hidden');
-  me.classList.add('small');
+  long.classList.add("show");
+  short.classList.add("hidden");
+  me.classList.add("small");
 });
 long.addEventListener("click", () => {
-  long.classList.remove('show');
-  short.classList.remove('hidden');
-  me.classList.remove('small');
+  long.classList.remove("show");
+  short.classList.remove("hidden");
+  me.classList.remove("small");
+});
+
+// スクロールイベント
+const f_targets = document.querySelectorAll(".fade_in");
+const s_targets = document.querySelectorAll(".shake");
+const offset = 100;
+
+window.addEventListener("scroll", () => {
+  const scroll = window.scrollY;
+  const h = window.innerHeight;
+
+  f_targets.forEach((target) => {
+    const pos = target.getBoundingClientRect().top + scroll;
+  
+    if (scroll > pos - h + offset) {
+      target.classList.add("inview");
+    } else {
+      target.classList.remove("inview");
+    }
+  })
+});
+
+window.addEventListener("scroll", () => {
+  const scroll = window.scrollY;
+  const h = window.innerHeight;
+
+  s_targets.forEach((target) => {
+    const pos = target.getBoundingClientRect().top + scroll;
+  
+    if (scroll > pos - h + offset) {
+      target.classList.add("inview");
+    } else {
+      target.classList.remove("inview");
+    }
+  })
 });
