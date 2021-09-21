@@ -776,8 +776,8 @@ body {
   -webkit-transform: translateY(100px);
           transform: translateY(100px);
   opacity: 0;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .fade_in.inview {

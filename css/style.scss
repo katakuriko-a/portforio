@@ -620,7 +620,7 @@ body {
 .fade_in {
   transform: translateY(100px);
   opacity: 0;
-  transition: .5s;
+  transition: 1s;
 
   &.inview {
     transform: translate(0);
