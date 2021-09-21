@@ -14,8 +14,8 @@ Stylesheet: 960px以上のモニタで適用
   }
   &:nth-child(3) {
     width: 55%;
-    top:-50%;
-    right: -10%;
+    top:-30%;
+    right: -20%;
   }
   &:nth-child(4) {
     width: 35%;
@@ -54,7 +54,7 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 .about {
-
+height: 100vh;
 
 
   &_title {
@@ -65,7 +65,7 @@ Stylesheet: 960px以上のモニタで適用
   &_menu {
     width: 28%;
     left: 15%;
-    top: 14%;
+    top: 18%;
   }
 
   &_me {
@@ -81,8 +81,8 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &_bg {
-    height: 56%;
-    margin-top: 12%;
+    height: 110%;
+    margin-top: 2%;
 
     &_2 {
       position:relative;
@@ -106,7 +106,7 @@ Stylesheet: 960px以上のモニタで適用
 }
 .works {
 
-  margin-top: -80%;
+  margin-top: -20%;
 
 
   &_title {

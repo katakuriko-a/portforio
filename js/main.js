@@ -79,7 +79,7 @@ long.addEventListener("click", () => {
 // スクロールイベント
 const f_targets = document.querySelectorAll(".fade_in");
 const s_targets = document.querySelectorAll(".shake");
-const offset = 100;
+const offset = 50;
 
 window.addEventListener("scroll", () => {
   const scroll = window.scrollY;
