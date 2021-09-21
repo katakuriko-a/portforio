@@ -3,7 +3,7 @@
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.querySelector(".loading").classList.add("hidden");
-    }, 0);
+    }, 1990);
   });
 
   const spans = document.querySelectorAll("#span");
