@@ -1,0 +1,137 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+.bgi {
+  position: absolute;
+
+  &:nth-child(1) {
+    width: 35%;
+  }
+  &:nth-child(2) {
+    width: 55%;
+  }
+  &:nth-child(3) {
+    width: 95%;
+    top: -45%;
+    right: -40%;
+  }
+  &:nth-child(4) {
+    width: 55%;
+    top: 42%;
+    right: -20%;
+    z-index: -200;
+    @include animation(
+      $name: right-in,
+      $duration: 1s,
+      $timing-function: ease-in-out,
+      $delay: 1.9s
+    );
+  }
+}
+
+.about {
+  &_short {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &_long {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &_title {
+    width: 42%;
+  }
+
+  &_menu {
+    top: 15%;
+    width: 40%;
+  }
+
+  &_bg {
+    height: 80%;
+    margin-top: 8%;
+
+    &_2 {
+      width: 60%;
+    }
+
+    &_egg {
+      width: 45%;
+      position: absolute;
+      top: 39%;
+      right: 0;
+      z-index: -1000;
+    }
+  }
+
+  &_me {
+    pointer-events: visible;
+    &:hover {
+      transform: translateY(-10%) rotate(20deg);
+      cursor: pointer;
+    }
+  }
+}
+
+.me_wrapper {
+  width: 45%;
+  height: 1000px;
+  right: 0%;
+  transform: translate(0%);
+  z-index: 400;
+  top: 10%;
+  overflow: visible;
+}
+
+.works {
+  margin-top: -60%;
+
+  &_title {
+    width: 30%;
+    padding-top: 10%;
+    left: 8%;
+  }
+
+  &_items {
+    width: 80%;
+    margin: 22% 10% 0;
+  }
+
+
+}
+
+.contact {
+  margin-top: 0%;
+  height: 90vh;
+  &_title {
+    width: 35%;
+    left: 8%;
+  }
+
+  &_form {
+    top: 25%;
+    left: 50%;
+  }
+
+  &_bg {
+    width: 300%;
+    top: 6%;
+    right: -100%;
+    z-index: -100;
+    pointer-events: none;
+  }
+}
+
+.finger {
+  left: 8%;
+  width: 10%;
+}
+
+.footer_bg {
+  width: 64%;
+  bottom: -1%;
+  left: 15%;
+}

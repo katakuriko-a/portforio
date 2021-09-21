@@ -1,0 +1,147 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.bgi {
+  position: absolute;
+
+  &:nth-child(1) {
+    width: 25%;
+  }
+  &:nth-child(2) {
+    width: 45%;
+  }
+  &:nth-child(3) {
+    width: 55%;
+    top:-50%;
+    right: -10%;
+  }
+  &:nth-child(4) {
+    width: 35%;
+    top: 38%;
+    right: -10%;
+  }
+}
+
+.name {
+  top: 30%;
+}
+
+.logo {
+  left: 38px;
+  top: 24px;
+}
+
+.menu {
+  right: 56px;
+  top: 24px;
+}
+
+.arrow {
+  left: 8%;
+}
+
+
+
+.span {
+  right: 68px;
+  top: 38px;
+}
+
+.name {
+  width: 56%;
+}
+
+.about {
+
+
+
+  &_title {
+    top: 6%;
+    width: 28%;
+  }
+
+  &_menu {
+    width: 28%;
+    left: 15%;
+    top: 14%;
+  }
+
+  &_me {
+    width: 60%;
+    top: 0%;
+
+
+    &:hover {
+      transform: translateY(-10%) rotate(20deg);
+      cursor: pointer;
+      
+    }
+  }
+
+  &_bg {
+    height: 56%;
+    margin-top: 12%;
+
+    &_2 {
+      position:relative;
+      margin-top: 30%;
+      margin-bottom: 30%;
+      width: 30%;
+      z-index: -2000;
+      margin-left: -10%;
+    }
+    
+    &_egg {
+      width: 25%;
+      top: 39%;
+      right: 0;
+    }
+  }
+}
+
+.me_wrapper {
+  overflow: unset;
+}
+.works {
+
+  margin-top: -80%;
+
+
+  &_title {
+      width: 20%;
+      padding-top: 10%;
+      left: 8%;
+  }
+
+  &_items {
+      width: 80%;
+      margin: 16% 10% 0;
+    }
+}
+
+.contact{
+  margin-top: 0%;
+  height: 100vh;
+
+  &_title {
+    width: 22%;
+    padding-top: 10px;
+  }
+  
+  &_form {
+    width: 50%;
+    top: 28%;
+    left: 50%;
+}
+}
+
+.finger {
+  width: 8%;
+}
+
+.footer_bg {
+  width: 40%;
+  left: 26%;
+}

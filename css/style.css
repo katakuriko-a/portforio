@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .loading {
   position: fixed;
   z-index: 10000;
@@ -265,8 +266,8 @@ body {
 
 .bgi:nth-child(1) {
   width: 50%;
-  top: -50px;
-  left: -50px;
+  top: -8%;
+  left: -8%;
   -webkit-animation-name: left-in;
           animation-name: left-in;
   -webkit-animation-duration: 1s;
@@ -285,8 +286,8 @@ body {
 
 .bgi:nth-child(2) {
   width: 80%;
-  top: -100px;
-  left: -100px;
+  top: -12%;
+  left: -12%;
   z-index: -100;
   -webkit-animation-name: top-in;
           animation-name: top-in;
@@ -307,7 +308,7 @@ body {
 .bgi:nth-child(3) {
   width: 100%;
   top: -20%;
-  right: -30%;
+  right: -40%;
   z-index: -200;
   -webkit-animation-name: right-in;
           animation-name: right-in;
@@ -430,18 +431,17 @@ body {
 
 .about_bg {
   display: block;
-  margin-top: -190px;
   position: absolute;
+  top: -15%;
   z-index: 300;
   width: 100%;
-  height: 100%;
+  height: 120%;
   pointer-events: none;
 }
 
 .about_bg_2 {
   width: 100%;
-  margin-top: 300px;
-  margin-left: -200px;
+  margin-left: -25%;
 }
 
 .about_bg_egg {
@@ -462,20 +462,22 @@ body {
           transform: translate(-50%);
   position: absolute;
   z-index: 400;
-  top: 34%;
+  top: 38%;
+  pointer-events: none;
 }
 
 .works {
   width: 100%;
-  height: 60vh;
   overflow: hidden;
   position: relative;
+  margin-top: 30%;
 }
 
 .works_title {
+  position: absolute;
   display: block;
   width: 60%;
-  margin: 0 auto;
+  left: 20%;
   z-index: 400;
 }
 
@@ -487,12 +489,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 64px -40% 0;
+  margin: 18% -40% 0;
+  padding: 16px;
 }
 
 .works_item {
   width: 32%;
-  padding-top: 30%;
+  margin: 0 1%;
+  padding-top: 29%;
   background-color: #fff;
   border: 5px solid #000;
   border-radius: 16px;
@@ -517,13 +521,13 @@ body {
   display: block;
   width: 60%;
   right: 19%;
-  top: 128px;
+  top: 15%;
 }
 
 .contact_bg {
   position: absolute;
   width: 400%;
-  top: 24px;
+  top: 6%;
   right: -110%;
   z-index: -100;
   pointer-events: none;
@@ -590,8 +594,8 @@ body {
 .finger {
   position: absolute;
   bottom: 0;
-  -webkit-transform: translateY(36px);
-          transform: translateY(36px);
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   left: 24px;
@@ -834,6 +838,253 @@ body {
   75% {
     -webkit-transform: translateX(100px);
             transform: translateX(100px);
+  }
+}
+
+@media (min-width: 600px) {
+  /******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+  .bgi {
+    position: absolute;
+  }
+  .bgi:nth-child(1) {
+    width: 35%;
+  }
+  .bgi:nth-child(2) {
+    width: 55%;
+  }
+  .bgi:nth-child(3) {
+    width: 95%;
+    top: -45%;
+    right: -40%;
+  }
+  .bgi:nth-child(4) {
+    width: 55%;
+    top: 42%;
+    right: -20%;
+    z-index: -200;
+    -webkit-animation-name: right-in;
+            animation-name: right-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 1.9s;
+            animation-delay: 1.9s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .about_short {
+    opacity: 0;
+    visibility: hidden;
+  }
+  .about_long {
+    opacity: 1;
+    visibility: visible;
+  }
+  .about_title {
+    width: 42%;
+  }
+  .about_menu {
+    top: 15%;
+    width: 40%;
+  }
+  .about_bg {
+    height: 80%;
+    margin-top: 8%;
+  }
+  .about_bg_2 {
+    width: 60%;
+  }
+  .about_bg_egg {
+    width: 45%;
+    position: absolute;
+    top: 39%;
+    right: 0;
+    z-index: -1000;
+  }
+  .about_me {
+    pointer-events: visible;
+  }
+  .about_me:hover {
+    -webkit-transform: translateY(-10%) rotate(20deg);
+            transform: translateY(-10%) rotate(20deg);
+    cursor: pointer;
+  }
+  .me_wrapper {
+    width: 45%;
+    height: 1000px;
+    right: 0%;
+    -webkit-transform: translate(0%);
+            transform: translate(0%);
+    z-index: 400;
+    top: 10%;
+    overflow: visible;
+  }
+  .works {
+    margin-top: -60%;
+  }
+  .works_title {
+    width: 30%;
+    padding-top: 10%;
+    left: 8%;
+  }
+  .works_items {
+    width: 80%;
+    margin: 22% 10% 0;
+  }
+  .contact {
+    margin-top: 0%;
+    height: 90vh;
+  }
+  .contact_title {
+    width: 35%;
+    left: 8%;
+  }
+  .contact_form {
+    top: 25%;
+    left: 50%;
+  }
+  .contact_bg {
+    width: 300%;
+    top: 6%;
+    right: -100%;
+    z-index: -100;
+    pointer-events: none;
+  }
+  .finger {
+    left: 8%;
+    width: 10%;
+  }
+  .footer_bg {
+    width: 64%;
+    bottom: -1%;
+    left: 15%;
+  }
+}
+
+@media (min-width: 960px) {
+  /******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+  .bgi {
+    position: absolute;
+  }
+  .bgi:nth-child(1) {
+    width: 25%;
+  }
+  .bgi:nth-child(2) {
+    width: 45%;
+  }
+  .bgi:nth-child(3) {
+    width: 55%;
+    top: -50%;
+    right: -10%;
+  }
+  .bgi:nth-child(4) {
+    width: 35%;
+    top: 38%;
+    right: -10%;
+  }
+  .name {
+    top: 30%;
+  }
+  .logo {
+    left: 38px;
+    top: 24px;
+  }
+  .menu {
+    right: 56px;
+    top: 24px;
+  }
+  .arrow {
+    left: 8%;
+  }
+  .span {
+    right: 68px;
+    top: 38px;
+  }
+  .name {
+    width: 56%;
+  }
+  .about_title {
+    top: 6%;
+    width: 28%;
+  }
+  .about_menu {
+    width: 28%;
+    left: 15%;
+    top: 14%;
+  }
+  .about_me {
+    width: 60%;
+    top: 0%;
+  }
+  .about_me:hover {
+    -webkit-transform: translateY(-10%) rotate(20deg);
+            transform: translateY(-10%) rotate(20deg);
+    cursor: pointer;
+  }
+  .about_bg {
+    height: 56%;
+    margin-top: 12%;
+  }
+  .about_bg_2 {
+    position: relative;
+    margin-top: 30%;
+    margin-bottom: 30%;
+    width: 30%;
+    z-index: -2000;
+    margin-left: -10%;
+  }
+  .about_bg_egg {
+    width: 25%;
+    top: 39%;
+    right: 0;
+  }
+  .me_wrapper {
+    overflow: unset;
+  }
+  .works {
+    margin-top: -80%;
+  }
+  .works_title {
+    width: 20%;
+    padding-top: 10%;
+    left: 8%;
+  }
+  .works_items {
+    width: 80%;
+    margin: 16% 10% 0;
+  }
+  .contact {
+    margin-top: 0%;
+    height: 100vh;
+  }
+  .contact_title {
+    width: 22%;
+    padding-top: 10px;
+  }
+  .contact_form {
+    width: 50%;
+    top: 28%;
+    left: 50%;
+  }
+  .finger {
+    width: 8%;
+  }
+  .footer_bg {
+    width: 40%;
+    left: 26%;
   }
 }
 /*# sourceMappingURL=style.css.map */
