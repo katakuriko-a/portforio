@@ -116,9 +116,13 @@ height: 100vh;
   }
 
   &_items {
-      width: 80%;
-      margin: 16% 10% 0;
-    }
+    width: 130%;
+    margin: 22% -16% 0;
+  }
+
+  &_item {
+    padding-top: 16%;
+  }
 }
 
 .contact{

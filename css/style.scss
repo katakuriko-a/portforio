@@ -409,7 +409,7 @@ body {
 
 .works {
   width: 100%;
-  overflow: hidden;
+
   position: relative;
   margin-top: 10%;
   // background-color: hotpink;
@@ -426,9 +426,13 @@ body {
     width: 180%;
     display: flex;
     justify-content: space-between;
-    margin: 18% -40% 0;
+    margin: 18% 0% 0;
     padding: 16px;
     
+    &_box {
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
 
 
 
@@ -437,7 +441,7 @@ body {
   &_item {
     width: 32%;
     margin: 0 1%;
-    padding-top: 29%;
+    padding-top: 14%;
     background-color: #fff;
     border: 5px solid #000;
     border-radius: 16px;

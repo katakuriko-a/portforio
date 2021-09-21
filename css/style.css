@@ -470,7 +470,6 @@ body {
 
 .works {
   width: 100%;
-  overflow: hidden;
   position: relative;
   margin-top: 10%;
 }
@@ -491,14 +490,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 18% -40% 0;
+  margin: 18% 0% 0;
   padding: 16px;
+}
+
+.works_items_box {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .works_item {
   width: 32%;
   margin: 0 1%;
-  padding-top: 29%;
+  padding-top: 14%;
   background-color: #fff;
   border: 5px solid #000;
   border-radius: 16px;
@@ -946,8 +950,8 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     left: 8%;
   }
   .works_items {
-    width: 80%;
-    margin: 22% 10% 0;
+    width: 150%;
+    margin: 22% -10% 0;
   }
   .contact {
     margin-top: 0%;
@@ -1075,8 +1079,11 @@ Stylesheet: 960px以上のモニタで適用
     left: 8%;
   }
   .works_items {
-    width: 80%;
-    margin: 16% 10% 0;
+    width: 130%;
+    margin: 22% -16% 0;
+  }
+  .works_item {
+    padding-top: 16%;
   }
   .contact {
     margin-top: 0%;
