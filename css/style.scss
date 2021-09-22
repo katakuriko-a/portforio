@@ -1,6 +1,8 @@
 @import "../modules/mixin";
 
-
+a {
+  text-decoration: none;
+}
 
 .loading {
   position: fixed;
@@ -10,7 +12,7 @@
   height: 100vh;
   visibility: visible;
   opacity: 1;
-  transition: .5s;
+  transition: 0.5s;
 
   &.hidden {
     visibility: hidden;
@@ -22,7 +24,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-60%);
+    transform: translate(-50%, -60%);
   }
 
   & > img {
@@ -36,10 +38,9 @@
     position: absolute;
     top: 56%;
     left: 50%;
-    transform: translate(-50%,-60%);
-    letter-spacing: .1em;
+    transform: translate(-50%, -60%);
+    letter-spacing: 0.1em;
     user-select: none;
-
   }
 }
 
@@ -115,6 +116,25 @@ body {
   &.show {
     visibility: visible;
   }
+
+}
+
+.cover2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  z-index: 1020;
+  opacity: 0.5;
+  visibility: hidden;
+  transition: 0.1s;
+
+  &.show {
+    visibility: visible;
+  }
+
 }
 
 .menu {
@@ -195,27 +215,26 @@ body {
   width: 80%;
   top: 35%;
   right: 49%;
+  transform: translate(50%, 50%);
+  @include animation(
+    $name: name,
+    $duration: 1s,
+    $timing-function: ease-in-out,
+    $delay: 1.9s
+  );
+}
+
+@keyframes name {
+  0% {
+    transform: translate(50%, 400%);
+  }
+  50% {
+    transform: translate(50%, -100%);
+  }
+  100% {
     transform: translate(50%, 50%);
-    @include animation(
-      $name: name,
-      $duration: 1s,
-      $timing-function: ease-in-out,
-      $delay: 1.9s
-    );
-
   }
-
-  @keyframes name {
-    0% {
-      transform: translate(50%, 400%);
-    }
-    50% {
-      transform: translate(50%, -100%);
-    }
-    100% {
-      transform: translate(50%, 50%);
-    }
-  }
+}
 
 .bgi {
   position: absolute;
@@ -304,7 +323,7 @@ body {
   //   z-index: 500;
   //   transition: 1s;
   //   transform: scaleY(1);
-    
+
   //   &:hover {
   //     transform: scaleY(2);
   //     transform-origin: top;
@@ -330,13 +349,11 @@ body {
     z-index: 400;
     opacity: 1;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
 
-     &:hover {
+    &:hover {
       transform: translateY(-10px);
-     }
-
-
+    }
 
     &.hidden {
       opacity: 0;
@@ -351,7 +368,6 @@ body {
       opacity: 1;
       visibility: visible;
     }
-
   }
 
   &_me {
@@ -359,13 +375,12 @@ body {
     left: 10%;
     position: absolute;
     z-index: 1000;
-    transition: .3s;
+    transition: 0.3s;
 
     &.small {
       width: 72%;
       // top: 48%;
       transform: translateY(10%) rotate(20deg);
-      
     }
   }
 
@@ -387,7 +402,7 @@ body {
     &_egg {
       width: 60%;
       position: absolute;
-       bottom: 0;
+      bottom: 0;
       right: 0;
       z-index: -1000;
     }
@@ -407,10 +422,64 @@ body {
   pointer-events: none;
 }
 
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background-color: #fff;
+
+  padding: 64px;
+  border-radius: 32px;
+  border: 5px solid #000;
+  box-shadow: 2px 2px 0;
+  visibility: hidden;
+
+  &.show {
+    visibility: visible;
+  }
+}
+
 .works {
   width: 100%;
 
-  
+  &_img {
+    width: 100%;
+    padding: 8px;
+    border-radius: 16px;
+  }
+
+  &_btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin: 4px auto 16px;
+    background-color: rgb(4, 112, 166);
+    text-align: center;
+    line-height: 25px;
+    color: #fff;
+    font-size: 1.8em;
+
+    &:hover {
+      cursor: pointer;
+      background-color: rgb(255, 217, 248);
+    }
+  }
+
+  &_description {
+    position: absolute;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 0.6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    visibility: hidden;
+  }
+
   .swiper-wrapper {
     padding: 50px;
     margin-top: 14%;
@@ -422,15 +491,12 @@ body {
     background-color: #fff;
   }
   .swiper-button-prev,
-  .swiper-button-next
-   {
-     
-     top: 60%;
+  .swiper-button-next {
+    top: 60%;
     &:after {
-      color:#2882c3 ;
-      font-size: 32px;
+      color: #2882c3;
+      font-size: 36px;
     }
-
   }
 
   position: relative;
@@ -444,21 +510,17 @@ body {
     z-index: 400;
   }
 
-
-
   &_item {
     // width: 32%;
     // margin: 0 2%;
-    padding-top: 30%;
     background-color: #fff;
     border: 5px solid #000;
-    border-radius: 16px;
     box-shadow: 2px 2px 0;
-    
+    border-radius: 16px;
+
     &:hover {
       transform: scale(1.05);
     }
-
   }
 }
 
@@ -468,7 +530,6 @@ body {
   width: 100%;
   height: 110vh;
   // background-color: rgb(105, 183, 255);
-
 
   &_title {
     position: absolute;
@@ -641,7 +702,6 @@ body {
 }
 
 .shake {
-
   &_wrapper {
     position: relative;
     width: 100%;
@@ -654,8 +714,8 @@ body {
       $name: shake,
       $duration: 8s,
       $timing-function: ease-in-out,
-      $iteration-count: infinite,
-    )
+      $iteration-count: infinite
+    );
   }
 }
 

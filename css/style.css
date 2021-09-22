@@ -1,4 +1,8 @@
 @charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
 .loading {
   position: fixed;
   z-index: 10000;
@@ -7,8 +11,8 @@
   height: 100vh;
   visibility: visible;
   opacity: 1;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .loading.hidden {
@@ -41,7 +45,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -60%);
           transform: translate(-50%, -60%);
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -127,6 +131,24 @@ body {
 }
 
 .cover.show {
+  visibility: visible;
+}
+
+.cover2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  z-index: 1020;
+  opacity: 0.5;
+  visibility: hidden;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.cover2.show {
   visibility: visible;
 }
 
@@ -391,8 +413,8 @@ body {
   z-index: 400;
   opacity: 1;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .about_menu:hover {
@@ -419,8 +441,8 @@ body {
   left: 10%;
   position: absolute;
   z-index: 1000;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .about_me.small {
@@ -468,10 +490,67 @@ body {
   pointer-events: none;
 }
 
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10000;
+  background-color: #fff;
+  padding: 64px;
+  border-radius: 32px;
+  border: 5px solid #000;
+  -webkit-box-shadow: 2px 2px 0;
+          box-shadow: 2px 2px 0;
+  visibility: hidden;
+}
+
+.popup.show {
+  visibility: visible;
+}
+
 .works {
   width: 100%;
   position: relative;
   margin-top: 10%;
+}
+
+.works_img {
+  width: 100%;
+  padding: 8px;
+  border-radius: 16px;
+}
+
+.works_btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin: 4px auto 16px;
+  background-color: #0470a6;
+  text-align: center;
+  line-height: 25px;
+  color: #fff;
+  font-size: 1.8em;
+}
+
+.works_btn:hover {
+  cursor: pointer;
+  background-color: #ffd9f8;
+}
+
+.works_description {
+  position: absolute;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 0.6em;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .works .swiper-wrapper {
@@ -495,7 +574,7 @@ body {
 .works .swiper-button-prev:after,
 .works .swiper-button-next:after {
   color: #2882c3;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .works_title {
@@ -507,12 +586,11 @@ body {
 }
 
 .works_item {
-  padding-top: 30%;
   background-color: #fff;
   border: 5px solid #000;
-  border-radius: 16px;
   -webkit-box-shadow: 2px 2px 0;
           box-shadow: 2px 2px 0;
+  border-radius: 16px;
 }
 
 .works_item:hover {
@@ -954,11 +1032,47 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     padding-top: 10%;
     left: 8%;
   }
-  .swiper-button-next {
-    top: 52%;
+  .works_btn {
+    display: none;
   }
-  .swiper-button-prev {
-    top: 52%;
+  .works_img {
+    width: 100%;
+    padding: 16px;
+    border-radius: 32px;
+  }
+  .works_img:hover {
+    opacity: .3;
+  }
+  .works_img:hover + .works_description {
+    visibility: visible;
+  }
+  .works_description {
+    position: absolute;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: .6em;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .works .swiper-button-prev,
+  .works .swiper-button-next {
+    top: 60%;
+  }
+  .works .swiper-button-prev:after,
+  .works .swiper-button-next:after {
+    color: #2882c3;
+    font-size: 80px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .works .swiper-button-prev:hover,
+  .works .swiper-button-next:hover {
+    opacity: .8;
   }
   .contact {
     margin-top: 0%;
@@ -1084,9 +1198,6 @@ Stylesheet: 960px以上のモニタで適用
     width: 20%;
     padding-top: 10%;
     left: 8%;
-  }
-  .works_item {
-    padding-top: 30%;
   }
   .contact {
     margin-top: 0%;

@@ -95,14 +95,55 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     left: 8%;
   }
 
+  &_btn {
+    display: none;
+  }
+
+  &_img {
+    width: 100%;
+    padding: 16px;
+    border-radius: 32px;
+
+    &:hover {
+      opacity: .3;
+      }
+    &:hover + .works_description {
+      visibility: visible;
+      }
+    }
+  
+
+  &_description {
+    position: absolute;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: .6em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    visibility: hidden;
+
+  }
+
+  .swiper-button-prev,
+.swiper-button-next {
+  top: 60%;
+  &:after {
+    color: #2882c3;
+    font-size: 80px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &:hover {
+    opacity: .8;
+  }
 }
 
-.swiper-button-next {
- top: 52%;
 }
-.swiper-button-prev {
- top: 52%;
-}
+
+
 
 .contact {
   margin-top: 0%;
@@ -136,3 +177,4 @@ Stylesheet: 600px以上のタブレットやモニタで適用
   bottom: -1%;
   left: 15%;
 }
+

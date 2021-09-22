@@ -112,27 +112,54 @@ window.addEventListener("scroll", () => {
 });
 
 // スワイパー
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   // direction: 'vertical',
   loop: true,
-  slidesPerView:3,
+  slidesPerView: 3,
   centeredSlides: true,
   spaceBetween: 30,
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
-    clickable:true,
+    el: ".swiper-pagination",
+    clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
+
+// ポップアップ
+
+const cover2 = document.querySelector(".cover2 ");
+
+const btns = document.querySelectorAll(".works_btn");
+const popups= document.querySelectorAll(".popup");
+
+function popUp(i) {
+  btns[i].addEventListener("click", () => {
+        popups[i].classList.add("show");
+      cover2.classList.add("show");
+    });
+  
+  
+  cover2.addEventListener("click", () => {
+    popups[i].classList.remove("show");
+    cover2.classList.remove("show");
+  });
+}
+
+popUp(0);
+popUp(1);
+popUp(2);
+
+
+
