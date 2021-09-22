@@ -3,7 +3,7 @@
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.querySelector(".loading").classList.add("hidden");
-    }, 1990);
+    }, 0);
   });
 
   const spans = document.querySelectorAll("#span");
@@ -87,13 +87,13 @@ window.addEventListener("scroll", () => {
 
   f_targets.forEach((target) => {
     const pos = target.getBoundingClientRect().top + scroll;
-  
+
     if (scroll > pos - h + offset) {
       target.classList.add("inview");
     } else {
       target.classList.remove("inview");
     }
-  })
+  });
 });
 
 window.addEventListener("scroll", () => {
@@ -102,11 +102,37 @@ window.addEventListener("scroll", () => {
 
   s_targets.forEach((target) => {
     const pos = target.getBoundingClientRect().top + scroll;
-  
+
     if (scroll > pos - h + offset) {
       target.classList.add("inview");
     } else {
       target.classList.remove("inview");
     }
-  })
+  });
+});
+
+// スワイパー
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  // direction: 'vertical',
+  loop: true,
+  slidesPerView:3,
+  centeredSlides: true,
+  spaceBetween: 30,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });

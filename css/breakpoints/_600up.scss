@@ -95,14 +95,13 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     left: 8%;
   }
 
-  &_items {
-    width: 150%;
-    margin: 22% -10% 0;
-  }
+}
 
-
-
-
+.swiper-button-next {
+ top: 52%;
+}
+.swiper-button-prev {
+ top: 52%;
 }
 
 .contact {

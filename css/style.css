@@ -474,6 +474,35 @@ body {
   margin-top: 10%;
 }
 
+.works .swiper-wrapper {
+  padding: 50px;
+  margin-top: 14%;
+}
+
+.works .swiper-pagination {
+  bottom: 0;
+}
+
+.works .swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.works .swiper-button-prev {
+  color: #fff;
+  margin-top: 2%;
+  background-color: rgba(24, 137, 186, 0.4);
+  padding: 35px 40px 35px 35px;
+  border-radius: 50%;
+}
+
+.works .swiper-button-next {
+  color: #fff;
+  margin-top: 2%;
+  background-color: rgba(24, 137, 186, 0.4);
+  padding: 35px 35px 35px 40px;
+  border-radius: 50%;
+}
+
 .works_title {
   position: absolute;
   display: block;
@@ -482,27 +511,8 @@ body {
   z-index: 400;
 }
 
-.works_items {
-  width: 180%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 18% 0% 0;
-  padding: 16px;
-}
-
-.works_items_box {
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .works_item {
-  width: 32%;
-  margin: 0 1%;
-  padding-top: 14%;
+  padding-top: 30%;
   background-color: #fff;
   border: 5px solid #000;
   border-radius: 16px;
@@ -949,9 +959,11 @@ Stylesheet: 600px以上のタブレットやモニタで適用
     padding-top: 10%;
     left: 8%;
   }
-  .works_items {
-    width: 150%;
-    margin: 22% -10% 0;
+  .swiper-button-next {
+    top: 52%;
+  }
+  .swiper-button-prev {
+    top: 52%;
   }
   .contact {
     margin-top: 0%;
@@ -1078,12 +1090,8 @@ Stylesheet: 960px以上のモニタで適用
     padding-top: 10%;
     left: 8%;
   }
-  .works_items {
-    width: 130%;
-    margin: 22% -16% 0;
-  }
   .works_item {
-    padding-top: 16%;
+    padding-top: 30%;
   }
   .contact {
     margin-top: 0%;

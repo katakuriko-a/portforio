@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KuuaKobayashi</title>
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <div class="loading">
-      <img src="img/L1XZzG55psKvZAuKmGdT1632150587-1632150627.gif" alt="" class="loading_gif">
+      <img
+        src="img/L1XZzG55psKvZAuKmGdT1632150587-1632150627.gif"
+        alt=""
+        class="loading_gif"
+      />
       <p>Now Loading...</p>
     </div>
     <div class="cover" id="cover"></div>
@@ -25,16 +33,16 @@
         <div class="menu" id="menu"></div>
         <div class="menu_title">
           <a href="#about">
-            <img src="img/about_title.png" alt="" class="menu_title_1">
+            <img src="img/about_title.png" alt="" class="menu_title_1" />
           </a>
           <a href="#works">
-            <img src="img/works-title.png" alt="" class="menu_title_2">
+            <img src="img/works-title.png" alt="" class="menu_title_2" />
           </a>
           <a href="#contact">
-            <img src="img/contact-title.png" alt="" class="menu_title_3">
+            <img src="img/contact-title.png" alt="" class="menu_title_3" />
           </a>
         </div>
-        <img src="img/menu.png" alt="" class="open" id="open">
+        <img src="img/menu.png" alt="" class="open" id="open" />
       </header>
       <div class="mainvisual" id="top">
         <img src="img/ltw.png" alt="" class="bgi" />
@@ -50,59 +58,87 @@
 
     <section class="about" id="about">
       <!-- <div class="about_card"></div> -->
-      <img src="img/about_title.png" alt="" class="about_title fade_in">
+      <img src="img/about_title.png" alt="" class="about_title fade_in" />
       <div class="about_contents">
-        <img src="img/Group 153.png" alt="" class="about_menu about_short fade_in">
-        <img src="img/about_menu_l.png" alt="" class="about_menu about_long">
+        <img
+          src="img/Group 153.png"
+          alt=""
+          class="about_menu about_short fade_in"
+        />
+        <img src="img/about_menu_l.png" alt="" class="about_menu about_long" />
         <div class="me_wrapper">
-          <img src="img/Group 149.png" alt="" class="about_me">
+          <img src="img/Group 149.png" alt="" class="about_me" />
         </div>
       </div>
-      <img src="img/bg-about.png" alt="" class="about_bg fade_in">
+      <img src="img/bg-about.png" alt="" class="about_bg fade_in" />
       <div class="shake_wrapper">
-        <img src="img/bg-about-2.png" alt="" class="about_bg_2 shake">
-        <img src="img/bg-egg.png" alt="" class="about_bg_egg shake">
+        <img src="img/bg-about-2.png" alt="" class="about_bg_2 shake" />
+        <img src="img/bg-egg.png" alt="" class="about_bg_egg shake" />
       </div>
     </section>
     <section class="works" id="works">
-      <img src="img/works-title.png" alt="" class="works_title fade_in">
-      <div class="works_items_box">
-        <div class="works_items  fade_in">
-          <div class="works_item"><img src="" alt=""></div>
-          <div class="works_item"><img src="" alt=""></div>
-          <div class="works_item"><img src="" alt=""></div>
-          <div class="works_item"><img src="" alt=""></div>
-          <div class="works_item"><img src="" alt=""></div>
+      <img src="img/works-title.png" alt="" class="works_title fade_in" />
+      <!-- <div class="works_items_box">
+        <div class="works_items fade_in">
+          <div class="works_item"><img src="" alt="" /></div>
+          <div class="works_item"><img src="" alt="" /></div>
+          <div class="works_item"><img src="" alt="" /></div>
+          <div class="works_item"><img src="" alt="" /></div>
+          <div class="works_item"><img src="" alt="" /></div>
         </div>
+      </div> -->
+
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide works_item"></div>
+          <div class="swiper-slide works_item"></div>
+          <div class="swiper-slide works_item"></div>
+          <div class="swiper-slide works_item"></div>
+          <div class="swiper-slide works_item"></div>
+        </div>
+        <!-- If we need pagination -->
+        <!-- <div class="swiper-pagination"></div> -->
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
       </div>
+
     </section>
 
     <section class="contact" id="contact">
-      <img src="img/contact-title.png" alt="" class="contact_title fade_in">
+      <img src="img/contact-title.png" alt="" class="contact_title fade_in" />
       <form class="contact_form" action="">
-        <label class="contact_lavel" for="">お名前</label><br>
-        <input class="contact_input" type="text" name="" id=""><br>
-        <label class="contact_lavel" for="">メールアドレス</label><br>
-        <input class="contact_input" type="email" name="" id=""><br>
-        <label class="contact_lavel" for="">お問い合わせ内容</label><br>
-        <textarea class="contact_textarea" name="" id="" cols="50" rows="5"></textarea>
+        <label class="contact_lavel" for="">お名前</label><br />
+        <input class="contact_input" type="text" name="" id="" /><br />
+        <label class="contact_lavel" for="">メールアドレス</label><br />
+        <input class="contact_input" type="email" name="" id="" /><br />
+        <label class="contact_lavel" for="">お問い合わせ内容</label><br />
+        <textarea
+          class="contact_textarea"
+          name=""
+          id=""
+          cols="50"
+          rows="5"
+        ></textarea>
         <div class="contact_btn">
           <button class="primary_btn left_btn">内容の確認</button>
           <button class="primary_btn">送信</button>
         </div>
       </form>
       <a href="#top">
-        <img src="img/finger.png" alt="" class="finger">
+        <img src="img/finger.png" alt="" class="finger" />
       </a>
 
-      <img src="img/contact-bg.png" alt="" class="contact_bg fade_in">
-            <p class="copy">
-              &copy;KuuaKobayashi
-            </p>
-            <img src="img/Vector.png" alt="" class="footer_bg fade_in">
+      <img src="img/contact-bg.png" alt="" class="contact_bg fade_in" />
+      <p class="copy">&copy;KuuaKobayashi</p>
+      <img src="img/Vector.png" alt="" class="footer_bg fade_in" />
     </section>
 
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
