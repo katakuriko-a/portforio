@@ -487,20 +487,15 @@ body {
   background-color: #fff;
 }
 
-.works .swiper-button-prev {
-  color: #fff;
-  margin-top: 2%;
-  background-color: rgba(24, 137, 186, 0.4);
-  padding: 35px 40px 35px 35px;
-  border-radius: 50%;
+.works .swiper-button-prev,
+.works .swiper-button-next {
+  top: 60%;
 }
 
-.works .swiper-button-next {
-  color: #fff;
-  margin-top: 2%;
-  background-color: rgba(24, 137, 186, 0.4);
-  padding: 35px 35px 35px 40px;
-  border-radius: 50%;
+.works .swiper-button-prev:after,
+.works .swiper-button-next:after {
+  color: #2882c3;
+  font-size: 32px;
 }
 
 .works_title {

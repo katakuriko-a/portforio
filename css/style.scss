@@ -421,21 +421,16 @@ body {
   .swiper-pagination-bullet-active {
     background-color: #fff;
   }
-  .swiper-button-prev {
-    color: #fff;
-  
-    margin-top: 2%;
-    background-color: rgba(24, 137, 186, 0.4);
-    padding: 35px 40px 35px 35px;
-    border-radius: 50%;
+  .swiper-button-prev,
+  .swiper-button-next
+   {
+     top: 60%;
+    &:after {
+      color:#2882c3 ;
+      font-size: 32px;
+    }
   }
-  .swiper-button-next {
-    color: #fff;
-    margin-top: 2%;
-    background-color: rgba(24, 137, 186, 0.4);
-    padding: 35px 35px 35px 40px;
-    border-radius: 50%;
-  }
+
   position: relative;
   margin-top: 10%;
   // background-color: hotpink;
