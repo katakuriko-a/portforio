@@ -498,6 +498,7 @@ body {
           transform: translate(-50%, -50%);
   z-index: 10000;
   background-color: #fff;
+  text-align: center;
   padding: 64px;
   border-radius: 32px;
   border: 5px solid #000;
@@ -553,8 +554,12 @@ body {
   visibility: hidden;
 }
 
+.works .swiper {
+  padding: 0 10px;
+}
+
 .works .swiper-wrapper {
-  padding: 50px;
+  padding: 50px 0;
   margin-top: 14%;
 }
 

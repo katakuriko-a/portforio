@@ -114,11 +114,12 @@ window.addEventListener("scroll", () => {
 // スワイパー
 const swiper = new Swiper(".swiper", {
   // Optional parameters
-  // direction: 'vertical',
-  loop: true,
+  // loop: true,
   slidesPerView: 3,
   centeredSlides: true,
-  spaceBetween: 30,
+  initialSlide: 1,
+  spaceBetween: 20,
+  autoplay: 5000,
   // If we need pagination
   pagination: {
     el: ".swiper-pagination",
@@ -160,6 +161,6 @@ function popUp(i) {
 popUp(0);
 popUp(1);
 popUp(2);
-
-
+popUp(3);
+popUp(4);
 
