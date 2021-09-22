@@ -498,11 +498,6 @@ body {
   font-size: 32px;
 }
 
-.works .swiper-button-prev:focus,
-.works .swiper-button-next:focus {
-  outline: none;
-}
-
 .works_title {
   position: absolute;
   display: block;
