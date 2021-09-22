@@ -424,10 +424,15 @@ body {
   .swiper-button-prev,
   .swiper-button-next
    {
+     
      top: 60%;
     &:after {
       color:#2882c3 ;
       font-size: 32px;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 
