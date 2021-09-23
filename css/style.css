@@ -236,14 +236,17 @@ body {
   right: 49%;
   -webkit-transform: translate(50%, 50%);
           transform: translate(50%, 50%);
+}
+
+.name.name_in {
   -webkit-animation-name: name;
           animation-name: name;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -290,20 +293,6 @@ body {
   width: 50%;
   top: -8%;
   left: -8%;
-  -webkit-animation-name: left-in;
-          animation-name: left-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .bgi:nth-child(2) {
@@ -311,20 +300,6 @@ body {
   top: -12%;
   left: -12%;
   z-index: -100;
-  -webkit-animation-name: top-in;
-          animation-name: top-in;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-direction: normal;
-          animation-direction: normal;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 .bgi:nth-child(3) {
@@ -332,14 +307,24 @@ body {
   top: -20%;
   right: -40%;
   z-index: -200;
-  -webkit-animation-name: right-in;
-          animation-name: right-in;
+}
+
+.bgi:nth-child(4) {
+  width: 100%;
+  top: 42%;
+  right: -20%;
+  z-index: -200;
+}
+
+.bgi.left_in {
+  -webkit-animation-name: left-in;
+          animation-name: left-in;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;
@@ -348,19 +333,32 @@ body {
           animation-fill-mode: forwards;
 }
 
-.bgi:nth-child(4) {
-  width: 100%;
-  top: 42%;
-  right: -20%;
-  z-index: -200;
+.bgi.top_in {
+  -webkit-animation-name: top-in;
+          animation-name: top-in;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.bgi.right_in {
   -webkit-animation-name: right-in;
           animation-name: right-in;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 1.9s;
-          animation-delay: 1.9s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-direction: normal;

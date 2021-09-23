@@ -1,9 +1,16 @@
 "use strict";
 {
+  const bgis = document.querySelectorAll('.bgi');
+  const name = document.querySelector('.name');
   window.addEventListener("load", () => {
     setTimeout(() => {
       document.querySelector(".loading").classList.add("hidden");
-    }, 0);
+      bgis[0].classList.add('left_in');
+      bgis[1].classList.add('top_in');
+      bgis[2].classList.add('right_in');
+      bgis[3].classList.add('right_in');
+      name.classList.add('name_in');
+    }, 1000);
   });
 
   const spans = document.querySelectorAll("#span");

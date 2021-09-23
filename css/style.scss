@@ -216,12 +216,14 @@ body {
   top: 35%;
   right: 49%;
   transform: translate(50%, 50%);
-  @include animation(
-    $name: name,
-    $duration: 1s,
-    $timing-function: ease-in-out,
-    $delay: 1.9s
-  );
+
+  &.name_in {
+    @include animation(
+      $name: name,
+      $duration: 1s,
+      $timing-function: ease-in-out,
+    );
+  }
 }
 
 @keyframes name {
@@ -243,49 +245,52 @@ body {
     width: 50%;
     top: -8%;
     left: -8%;
-    @include animation(
-      $name: left-in,
-      $duration: 1s,
-      $timing-function: ease-in-out,
-      $delay: 1.9s
-    );
+
   }
   &:nth-child(2) {
     width: 80%;
     top: -12%;
     left: -12%;
     z-index: -100;
-    @include animation(
-      $name: top-in,
-      $duration: 1s,
-      $timing-function: ease-in-out,
-      $delay: 1.9s
-    );
+
   }
   &:nth-child(3) {
     width: 100%;
     top: -20%;
     right: -40%;
     z-index: -200;
-    @include animation(
-      $name: right-in,
-      $duration: 1s,
-      $timing-function: ease-in-out,
-      $delay: 1.9s
-    );
+
   }
   &:nth-child(4) {
     width: 100%;
     top: 42%;
     right: -20%;
     z-index: -200;
-    @include animation(
-      $name: right-in,
-      $duration: 1s,
-      $timing-function: ease-in-out,
-      $delay: 1.9s
-    );
+
   }
+
+    &.left_in {
+      @include animation(
+        $name: left-in,
+        $duration: 1s,
+        $timing-function: ease-in-out,
+      );
+    }
+    &.top_in {
+      @include animation(
+        $name: top-in,
+        $duration: 1s,
+        $timing-function: ease-in-out,
+      );
+    }
+    &.right_in {
+      @include animation(
+        $name: right-in,
+        $duration: 1s,
+        $timing-function: ease-in-out,
+      );
+    }
+  
 }
 
 .arrow {
